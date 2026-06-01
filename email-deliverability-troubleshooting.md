@@ -62,6 +62,14 @@ Implement the required DNS or email authentication correction.
 
 ## Validation
 
+## Customer Response Example
+
+We identified an email authentication configuration issue affecting message delivery.
+
+The affected DNS records were reviewed and the necessary corrections were applied. Because DNS changes require propagation time, full resolution may take up to 24–48 hours.
+
+We recommend monitoring delivery results during this period and contacting support if any additional failures occur.
+
 Confirm successful delivery after DNS propagation and testing.
 
 ## Lessons Learned
