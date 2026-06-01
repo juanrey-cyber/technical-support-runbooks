@@ -54,3 +54,14 @@ Confirm successful delivery after DNS propagation and testing.
 ## Lessons Learned
 
 Document the root cause, fix, and preventive recommendations.
+
+## Key Concepts
+
+### SPF
+Defines which mail servers are authorized to send email for a domain.
+
+### DKIM
+Verifies that messages are digitally signed by authorized systems.
+
+### DMARC
+Defines how receiving servers should handle messages that fail authentication checks.
