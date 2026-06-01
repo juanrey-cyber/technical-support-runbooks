@@ -18,6 +18,19 @@ Identify the root cause and restore successful email delivery.
 
 ## Investigation Process
 
+### Troubleshooting Workflow
+
+When a customer reports email delivery issues, I would avoid making assumptions and follow a structured process:
+
+1. Confirm the scope of the issue.
+2. Identify the affected domain and email provider.
+3. Review any bounce-back or error messages.
+4. Check DNS records related to email delivery.
+5. Validate SPF, DKIM, and DMARC configuration.
+6. Identify the most likely root cause.
+7. Apply or recommend the fix.
+8. Monitor results after DNS propagation.
+   
 ### Step 1 - Verify DNS Records
 
 Check:
