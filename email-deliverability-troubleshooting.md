@@ -86,6 +86,27 @@ Result:
 
 Receiving mail servers can now verify that Google Workspace is authorized to send email for the domain.
 
+## Hypothesis and Findings
+
+### Initial Hypothesis
+
+Email authentication is failing due to an SPF configuration issue.
+
+### Evidence Collected
+
+- MX records are present and correctly configured.
+- DKIM is enabled and messages are signed.
+- DMARC policy exists and is valid.
+- SPF record does not include the authorized Google Workspace mail servers.
+
+### Finding
+
+The root cause is an incomplete SPF record.
+
+### Outcome
+
+After updating the SPF record to include Google's authorized sending infrastructure, email authentication succeeds and deliverability improves.
+
 ## Resolution
 
 Implement the required DNS or email authentication correction.
