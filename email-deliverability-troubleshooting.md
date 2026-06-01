@@ -56,6 +56,36 @@ Confirm that DMARC policy is configured correctly and aligns with SPF and DKIM.
 
 Determine which configuration is causing delivery failure.
 
+## Investigation Example
+
+Example scenario:
+
+Customer reports that emails sent from Google Workspace are being delivered to spam.
+
+Investigation:
+
+1. Verify MX records.
+2. Verify SPF record.
+3. Verify DKIM status.
+4. Verify DMARC policy.
+5. Compare results with Google Workspace recommendations.
+
+Finding:
+
+The SPF record was missing Google's authorized sending servers.
+
+Example:
+
+v=spf1 ~all
+
+Corrected example:
+
+v=spf1 include:_spf.google.com ~all
+
+Result:
+
+Receiving mail servers can now verify that Google Workspace is authorized to send email for the domain.
+
 ## Resolution
 
 Implement the required DNS or email authentication correction.
