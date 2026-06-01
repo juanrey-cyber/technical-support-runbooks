@@ -72,6 +72,16 @@ We recommend monitoring delivery results during this period and contacting suppo
 
 Confirm successful delivery after DNS propagation and testing.
 
+## Escalation Criteria
+
+Escalate the issue when:
+
+- DNS records appear correct but delivery failures continue.
+- The issue involves provider-side outages.
+- Access to systems or configurations is restricted.
+- The root cause cannot be identified with available evidence.
+- Engineering or infrastructure teams are required to implement the fix.
+
 ## Lessons Learned
 
 Document the root cause, fix, and preventive recommendations.
